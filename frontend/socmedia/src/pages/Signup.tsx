@@ -5,6 +5,7 @@ const Signup = () => {
     const [middleName, setMiddleName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
+    const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
 
@@ -41,6 +42,12 @@ const Signup = () => {
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
+            />
+            <label>Username: </label>
+            <input 
+                type="text"
+                onChange={(e) => setUsername(e.target.value)}
+                value={username}
             />
             <label>Password: </label>
             <input 
