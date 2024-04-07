@@ -8,6 +8,8 @@ const AccountSettings = () => {
     const [lastName, setLastName] = useState('')
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
 
     const handleUpdate = async (fieldName: string, value: string) => {
         try {
@@ -34,47 +36,70 @@ const AccountSettings = () => {
         }
     }
 
+    const handlePassword = async () => {
+        if (password != confirmPassword) {
+            // Do logic here
+            console.log("PASSWORDS DON'T MATCH")
+        } else {
+            handleUpdate('password', password)
+        }
+
+    }
+
     return (
         // IF THE BACKEND IS DONE MAKE SURE TO CHANGE THE LABEL TO
         // SOMETHING LIKE {body.firstName} from the DB
         <div className="account-settings">
             <h3>Account Settings Page</h3>
     
-            <label>{firstName}</label>
+            <label>First Name: {firstName}</label>
             <input 
                 type="text"
                 onChange={(e) => { setFirstName(e.target.value) }}
                 value={firstName} 
             />
             <button onClick={() => handleUpdate('firstName', firstName)}>Update</button>
-            <label>{middleName}</label>
+            <label>Middle Name: {middleName}</label>
             <input 
                 type="text"
                 onChange={(e) => { setMiddleName(e.target.value) }}
                 value={middleName} 
             />
             <button onClick={() => handleUpdate('middleName', middleName) }>Update</button>
-            <label>{lastName}</label>
+            <label>Last Name: {lastName}</label>
             <input 
                 type="text"
                 onChange={(e) => { setLastName(e.target.value) }}
                 value={lastName} 
             />
             <button onClick={() => handleUpdate('lastName', lastName) }>Update</button>
-            <label>{username}</label>
+            <label>Username: {username}</label>
             <input 
                 type="text"
                 onChange={(e) => { setUsername(e.target.value) }}
                 value={username} 
             />
             <button onClick={() => handleUpdate('username', username) }>Update</button>
-            <label>{email}</label>
+            <label>Email: {email}</label>
             <input 
                 type="email"
                 onChange={(e) => { setEmail(e.target.value) }}
                 value={email} 
             />
             <button onClick={() => handleUpdate('email', email) }>Update</button>
+            <label>Update Password:</label>
+            <input 
+                type="password"
+                onChange={(e) => { setPassword(e.target.value) }}
+                value={password} 
+            />
+            <label>Confirm Passowrd:</label>
+            <input 
+                type="password"
+                onChange={(e) => { setConfirmPassword(e.target.value) }}
+                value={confirmPassword} 
+            />
+            <button onClick={() => handlePassword() }>Update</button>
         </div>
     )
 
