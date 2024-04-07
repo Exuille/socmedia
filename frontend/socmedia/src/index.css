@@ -8,6 +8,26 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* NAVBAR */
+header .nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e0e0e0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 10px;
+}
+
 /* LOGIN AND SIGNUP PAGES */
 form.signup, form.login {
   display: flex;

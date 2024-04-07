@@ -4,11 +4,13 @@ import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import AccountSettings from "./pages/AccountSettings";
 import User from "./pages/User";
+import NavBar from "./components/NavBar";
 
 function App () {
   return (
     <div className="App">
       <BrowserRouter>
+        <NavBar />
         <div className="pages">
           <Routes>
             <Route 
