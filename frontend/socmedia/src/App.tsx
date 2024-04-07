@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import AccountSettings from "./pages/AccountSettings";
+import User from "./pages/User";
 
 function App () {
   return (
@@ -21,6 +22,10 @@ function App () {
             <Route 
               path="/account-settings"
               element={<AccountSettings />}
+            />
+            <Route 
+              path="/user"
+              element={<User />}
             />
           </Routes>
         </div>

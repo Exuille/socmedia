@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* LOGIN AND SIGNUP PAGES */
 form.signup, form.login {
   display: flex;
   justify-content: center;
@@ -20,7 +21,21 @@ form.signup, form.login {
   border-radius: 4px;
 }
 
+/* ACCOUNT SETTINGS PAGE */
 .account-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+/* USER PROFILE PAGE */
+.user-profile div {
   display: flex;
   justify-content: center;
   align-items: center;
