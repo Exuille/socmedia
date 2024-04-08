@@ -1,0 +1,75 @@
+.feed-main {
+    height: 100vh;
+    width: 50vw;
+    margin-left: 25vw;
+    /* overflow-y: scroll;
+    scrollbar-width: thin; "thin" or "auto"
+    scrollbar-color: #888 #f1f1f1; thumb color and track color */
+    /* flex: 1; */
+}
+
+.feed-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.feed-main .top-part {
+    color: #fd2d01;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed-main .top-part input {
+    height: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dbdee0;
+    padding: 7px;
+    text-align: center;
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.feed-main .feed-container .post-container {
+    margin: 10px;
+    height: 55vh;
+    width: 45vw;
+    background-color: #dbdee0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-main .feed-container .post-container .profile-container {
+    margin: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.feed-main .feed-container .post-container .profile-container .rightSide-profile {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.feed-main .feed-container .post-container .profile-container p {
+    text-overflow: clip;
+    transform: translateY(-10px);
+}
+
+.feed-main .feed-container .post-container .interactive-buttons {
+    margin: auto 10px 10px 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.feed-main .feed-container .post-container .interactive-buttons button {
+    height: 30px;
+    width: 30px;
+}
