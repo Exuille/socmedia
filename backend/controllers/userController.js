@@ -19,10 +19,14 @@ const registerUser = async (req, res) => {
 };
 
 const loginUser = async (req, res) => {
-    const { emailAddress, password } = req.body;
+    const { emailAddress, username, password } = req.body;
 
     try {
-        const user = await User.findOne({ emailAddress });
+        let user = await User.findOne({ emailAddress });
+        if (!user) {
+            user = await User.findOne({ username });
+        }
+
         if (!user) {
             return res.status(404).json({ error: 'User not found!' });
         }
@@ -39,6 +43,7 @@ const loginUser = async (req, res) => {
         res.status(400).json({ error: error.message });
     }
 };
+
 
 module.exports = {
     registerUser,
