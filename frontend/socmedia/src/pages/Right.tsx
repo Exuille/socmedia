@@ -20,65 +20,6 @@ const Right = () => {
           </p>
         </div>
         {/*  */}
-        <div className="profile-container">
-          <img className="rightSide-profile" src="" alt="" />
-          <p style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
-            James De Villa Magnaye <br />{" "}
-            <span style={{ color: "#b5b7b8", fontSize: "0.7rem" }}>
-              @akosijameshaha
-            </span>
-          </p>
-        </div>
-        {/*  */}
-        <div className="profile-container">
-          <img className="rightSide-profile" src="" alt="" />
-          <p style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
-            James De Villa Magnaye <br />{" "}
-            <span style={{ color: "#b5b7b8", fontSize: "0.7rem" }}>
-              @akosijameshaha
-            </span>
-          </p>
-        </div>
-        {/*  */}
-        <div className="profile-container">
-          <img className="rightSide-profile" src="" alt="" />
-          <p style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
-            James De Villa Magnaye <br />{" "}
-            <span style={{ color: "#b5b7b8", fontSize: "0.7rem" }}>
-              @akosijameshaha
-            </span>
-          </p>
-        </div>
-        {/*  */}
-        <div className="profile-container">
-          <img className="rightSide-profile" src="" alt="" />
-          <p style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
-            James De Villa Magnaye <br />{" "}
-            <span style={{ color: "#b5b7b8", fontSize: "0.7rem" }}>
-              @akosijameshaha
-            </span>
-          </p>
-        </div>
-        {/*  */}
-        <div className="profile-container">
-          <img className="rightSide-profile" src="" alt="" />
-          <p style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
-            James De Villa Magnaye <br />{" "}
-            <span style={{ color: "#b5b7b8", fontSize: "0.7rem" }}>
-              @akosijameshaha
-            </span>
-          </p>
-        </div>
-        {/*  */}
-        <div className="profile-container">
-          <img className="rightSide-profile" src="" alt="" />
-          <p style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
-            James De Villa Magnaye <br />{" "}
-            <span style={{ color: "#b5b7b8", fontSize: "0.7rem" }}>
-              @akosijameshaha
-            </span>
-          </p>
-        </div>
       </div>
     </div>
   );
