@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .right-container .sponsors-img .sponsor {
@@ -31,7 +32,6 @@
     background-color: #dbdee0;
 }
 .right-container .connected-part {
-    margin-top: 220px;
     height: 60px;
     width: 250px;
 
