@@ -21,7 +21,7 @@ const Login = () => {
                 <img src={circles} alt="circle" />
                 <h1>Hello,</h1>
                 <h1>Welcome Back...</h1>
-                <p>Please enter your email and password</p>
+                <p>Please enter your email or username and password</p>
                 <form className="login-form" onSubmit={handleSubmit}>
 
                     <label>Email or Username: </label>
