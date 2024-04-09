@@ -1,0 +1,101 @@
+.signup {
+    display: flex;
+    justify-content: center;
+}
+
+.image--s {
+    background-image: url('../assets/loginsignup/bg_cliq.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 38vw;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.signup-container {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 6vw;
+    width: 400px;
+    position: relative;
+}
+
+.signup-container img {
+    width: 20%;
+    margin-bottom: 1vw;
+}
+
+.signup-container h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 3vw;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    margin-top: 1vw;
+    padding-left: 1vw;
+    font-weight: 500;
+}
+
+.signup-form input {
+    width: 100%;
+    height: 2vw;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.signup-form button {
+    width: 13vw;
+    height: 3vw;
+    border-radius: 20px;
+    background-color: var(--dark-color);
+    border: 0;
+    color: white;
+    font-size: 1.1vw;
+}
+
+.signup-form button:hover {
+    background-color: var(--dark-hover-color);
+    cursor: pointer;
+}
+
+.form-actions--s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.3vw;
+}
+
+.form-actions--s p {
+    margin-top: 1.3vw;
+    font-weight: 400;
+}
+
+.form-actions--s p a {
+    color: var(--primary-color);
+}
+
+.name-container {
+    display: flex; 
+    flex-direction: row;
+    gap: 10px;
+}
+
+.name-container input {
+    width: 12vw;
+}
