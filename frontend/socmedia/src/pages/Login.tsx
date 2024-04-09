@@ -15,8 +15,8 @@ const Login = () => {
     }
 
     return (
-        <div className="login">
-            <div className="image"></div>
+        <section className="login">
+            <header className="image"></header>
             <div className="login-container">
                 <img src={circles} alt="circle" />
                 <h1>Hello,</h1>
@@ -44,7 +44,7 @@ const Login = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
     )
 }
 
