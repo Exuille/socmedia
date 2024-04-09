@@ -2,8 +2,8 @@
 
 .nav-side {
     height: 100vh;
-    width: 25vw;
-    /* background-color: grey; */
+    width: 20vw;
+    background-color: #f3f2ee;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -59,12 +59,13 @@
 
 
 .nav-side .button-nav button {
-    height: 40px;
-    width: 200px;
-    border-radius: 10px;
-    border: none;
+    height: 35px;
+    width: 20vw;
+    border-right: 5px solid #fea330;
+    /* border-radius: 2px; */
     font-weight: bold;
     text-decoration: none;
+    font-size: 0.8rem;
 }
 
 .nav-side .follow-btn {

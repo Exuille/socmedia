@@ -1,0 +1,5 @@
+@media screen and (max-width: 900px) {
+    .nav-side, .right-container {
+        display: none;
+    }
+}
