@@ -8,6 +8,7 @@ import Feed from "./pages/Feed";
 import AccountSettings from "./pages/AccountSettings";
 import Messages from "./pages/Messages";
 import Right from "./pages/Right";
+import "./App.css";
 
 // Common layout for pages with NewsfeedBar
 interface PageWithNewsfeedBarLayoutProps {

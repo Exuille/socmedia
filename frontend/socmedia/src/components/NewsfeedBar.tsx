@@ -1,6 +1,6 @@
 import { useLocation, Link } from "react-router-dom";
 import styled from "styled-components";
-import defaultUser from "../assets/defaultUser.png";
+// import defaultUser from "../assets/defaultUser.png";
 import "../styles/NewsfeedBar.css";
 
 interface ButtonProps {
@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const StyledButton = styled.button<ButtonProps>`
   background-color: ${(props: ButtonProps) =>
-    props.active ? "black" : "white"};
+    props.active ? "black" : "transparent"};
   cursor: pointer;
   border: none;
 `;
@@ -25,7 +25,7 @@ const NewsfeedBar = () => {
   return (
     <div className="nav-side">
       <img src="./src/assets/test-logo.png" className="logo" alt="" />
-      <img src={defaultUser} className="userProfile" alt="user_profile" />
+      {/* <img src={defaultUser} className="userProfile" alt="user_profile" />
       <label className="editProfile">Edit Profile</label>
       <br />
       <label style={{ fontWeight: "bold" }}>
@@ -50,8 +50,13 @@ const NewsfeedBar = () => {
           <br />
           Following
         </label>
-      </div>
+      </div> */}
       <div className="button-nav">
+        <StyledButton active={location.pathname.startsWith("/user")}>
+          <StyledLink to="/user" active={location.pathname.startsWith("/user")}>
+            Profile
+          </StyledLink>
+        </StyledButton>
         <StyledButton active={location.pathname.startsWith("/feed")}>
           <StyledLink to="/feed" active={location.pathname.startsWith("/feed")}>
             Newsfeed
@@ -82,7 +87,7 @@ const NewsfeedBar = () => {
           </StyledLink>
         </StyledButton>
       </div>
-      <button className="follow-btn">Follow</button>
+      {/* <button className="follow-btn">Follow</button> */}
     </div>
   );
 };

@@ -1,13 +1,19 @@
 import "../styles/Feed.css";
+// import { TiThMenu } from "react-icons/ti";
+import MobileBar from "../components/MobileBar";
 
 const Feed = () => {
   return (
     <div className="feed-main">
-      <div className="top-part">
-        <h2>Feeds</h2>
-        <input type="text" placeholder="Search accounts " />
-      </div>
+      <MobileBar />
       <div className="feed-container">
+        <div className="your-post-container">
+          <textarea placeholder="What's on your mind?" maxLength={150} />
+          <div className="button-post">
+            <button>Photo/Video</button>
+            <button>POST</button>
+          </div>
+        </div>
         <div className="post-container">
           <div className="profile-container">
             <img className="rightSide-profile" src="" alt="" />
@@ -18,6 +24,7 @@ const Feed = () => {
               </span>
             </p>
           </div>
+          <div className="post-here">HI</div>
           <div className="interactive-buttons">
             <button>♥</button>
             <button>📦</button>
