@@ -1,41 +1,57 @@
 .signup {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
 .image--s {
+    width: 65vw;
+    height: 100vh;
     background-image: url('../assets/loginsignup/bg_cliq.png');
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 38vw;
-    bottom: 0;
-    overflow: hidden;
 }
 
 .signup-container {
-    margin-top: 3vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: 6vw;
-    width: 400px;
-    position: relative;
+    align-items: flex-start;
+    width: 30vw;
+    height: 100vh;
+    margin-left: 5vw;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.signup-form .fn-input, .signup-form .mn-input {
+    width: 8rem;
+}
+
+.signup-form .fn-input input, .signup-form .mn-input input {
+    width: 7rem;
 }
 
 .signup-container img {
     width: 20%;
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
 }
 
 .signup-container h1 {
     font-size: 50px;
     margin: 0;
-    margin-bottom: 3vw;
+}
+
+.signup-container p {
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 4vw;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .signup-form {
@@ -44,28 +60,28 @@
 }
 
 .signup-form label {
-    margin-top: 1vw;
     padding-left: 1vw;
     font-weight: 500;
 }
 
 .signup-form input {
-    width: 100%;
-    height: 2vw;
+    width: 285px;
+    height: 30px;
     border-radius: 20px;
     background-color: whitesmoke;
     font-size: 18px;
-    padding-left: 15px;
+    margin-right: 10px;
+    padding-left: 2vw;
 }
 
 .signup-form button {
-    width: 13vw;
-    height: 3vw;
+    width: 120px;
+    height: 35px;
     border-radius: 20px;
     background-color: var(--dark-color);
     border: 0;
     color: white;
-    font-size: 1.1vw;
+    font-size: 0.9rem;
 }
 
 .signup-form button:hover {
@@ -82,6 +98,7 @@
 }
 
 .form-actions--s p {
+    font-size: 1rem;
     margin-top: 1.3vw;
     font-weight: 400;
 }
@@ -90,12 +107,63 @@
     color: var(--primary-color);
 }
 
-.name-container {
-    display: flex; 
-    flex-direction: row;
-    gap: 10px;
-}
+@media only screen and (max-width: 900px) {
+    .image--s {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 
-.name-container input {
-    width: 12vw;
+    .signup-container {
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .signup-form .fn-input, .signup-form .mn-input {
+        width: 25vw;
+    }
+
+    .signup-form .fn-input input, .signup-form .mn-input input {
+        width: 8rem;
+    }
+
+    .signup-form input {
+        width: 57vw;
+    }
+    
+    .signup-container img {
+        width: 20%;
+        margin-bottom: 3vw;
+    }
+
+    .signup-container .get-started h1{
+        margin-bottom: 2vh;
+    }
+
+    .signup-container h1 {
+        font-size: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .signup-container label {
+        margin-top: 2vw;
+    }
+
+    .form-actions--s button {
+        margin-top: 4vw;
+    }
+
+    .form-actions--s p {
+        margin-top: 4vw;
+    }
 }

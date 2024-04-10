@@ -24,10 +24,12 @@ const Signup = () => {
             <header className="image--s"></header>
             <div className="signup-container">
                 <img src={circles} alt="circle" />
-                <h1>Get Started</h1>
+                <div className="get-started">
+                    <h1>Get Started</h1>
+                </div>
                 <form className="signup-form" onSubmit={handleSubmit}>
                 <div className="name-container">
-                        <div>
+                        <div className="fn-input">
                             <label>First Name: </label>
                             <input 
                                 className="fn-input"
@@ -36,7 +38,7 @@ const Signup = () => {
                                 value={firstName}
                             />
                         </div>
-                        <div>
+                        <div className="mn-input">
                             <label>Middle Name: </label>
                             <input 
                                 className="mn-input"

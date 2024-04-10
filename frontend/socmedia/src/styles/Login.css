@@ -1,30 +1,25 @@
 .login {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
 .image {
+    width: 65vw;
+    height: 100vh;
     background-image: url('../assets/loginsignup/bg_cliq.png');
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 38vw;
-    bottom: 0;
-    overflow: hidden;
 }
 
 .login-container {
-    margin-top: 8vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: 6vw;
-    width: 400px;
-    position: relative;
+    align-items: flex-start;
+    width: 25vw;
+    height: 100vh;
+    margin-left: 5vw;
 }
 
 .login-container img {
@@ -41,7 +36,7 @@
     margin: 0;
     margin-left: 5px;
     margin-bottom: 4vw;
-    font-size: 1vw;
+    font-size: 0.8rem;
     font-weight: 300;
 }
 
@@ -56,22 +51,23 @@
 }
 
 .login-form input {
-    width: 100%;
-    height: 2vw;
+    width: 285px;
+    height: 30px;
     border-radius: 20px;
     background-color: whitesmoke;
     font-size: 18px;
-    padding-left: 15px;
+    margin-right: 10px;
+    padding-left: 2vw;
 }
 
 .login-form button {
-    width: 13vw;
-    height: 3vw;
+    width: 120px;
+    height: 35px;
     border-radius: 20px;
     background-color: var(--dark-color);
     border: 0;
     color: white;
-    font-size: 1.1vw;
+    font-size: 0.9rem;
 }
 
 .login-form button:hover {
@@ -88,6 +84,7 @@
 }
 
 .form-actions p {
+    font-size: 1rem;
     margin-top: 1.3vw;
     font-weight: 400;
 }
@@ -96,114 +93,41 @@
     color: var(--primary-color);
 }
 
-@media only screen and (max-width: 1024px) {
-    .login-container img {
-      width: 30%;
-    }
-    
-    .login-container {
-        width: 300px;
-    }
-
-    .login-container h1 {
-      font-size: 35px;
-    }
-
-    .login-container p {
-        font-size: 1.5vw;
-    }
-
-    .login-form input {
-        height: 2.5vw;
-    }
-
-    .login-form button {
-        font-size: 1.5vw;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .image {
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        right: 38vw;
-        bottom: 0;
-    }
-    
-    .login-container img {
-        width: 30%;
-    }
-    
-    .login-container {
-        margin-top: 15vw;
-        margin-right: 4vw;
-        width: 250px;
-    }
-
-    .login-container h1 {
-        font-size: 30px;
-    }
-
-    .login-form input {
-        height: 2.5vw;
-    }
-
-    .login-form button {
-        font-size: 1.7vw;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .login {
-        margin: 0;
-        overflow: hidden;
-    }
-
+@media only screen and (max-width: 900px) {
     .image {
         display: none;
-    }
-    
-    .login-container img {
-        width: 30%;
+        width: 0;
+        height: 0;
     }
 
     .login-container {
-        margin-top: 40vw;
-        margin-left: 0;
-        width: 80%;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-container {
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .login-container h1 {
-        font-size: 10vw;
+        font-size: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
     }
 
-    .login-container p {
-        font-size: 3vw;
+    .login-container label {
+        margin-top: 2vw;
     }
 
-    .login-form input {
-        height: 5vw;
+    .form-actions button {
+        margin-top: 4vw;
     }
 
-    .login-form button {
-        margin-top: 3vw;
-        width: 23vw;
-        height: 7vw;
-        font-size: 4.5vw;
-    }
-
-}
-
-@media only screen and (max-width: 376px) {
-    .login-form input {
-        height: 7vw;
-    }
-
-    .login-form button {
-        margin-top: 3vw;
-        width: 27vw;
-        height: 8vw;
-        font-size: 4.5vw;
+    .form-actions p {
+        margin-top: 4vw;
     }
 }
