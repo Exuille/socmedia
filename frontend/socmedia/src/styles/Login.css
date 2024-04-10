@@ -95,3 +95,115 @@
 .form-actions p a {
     color: var(--primary-color);
 }
+
+@media only screen and (max-width: 1024px) {
+    .login-container img {
+      width: 30%;
+    }
+    
+    .login-container {
+        width: 300px;
+    }
+
+    .login-container h1 {
+      font-size: 35px;
+    }
+
+    .login-container p {
+        font-size: 1.5vw;
+    }
+
+    .login-form input {
+        height: 2.5vw;
+    }
+
+    .login-form button {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image {
+        background-size: 100%;
+        top: 0;
+        left: 0;
+        right: 38vw;
+        bottom: 0;
+    }
+    
+    .login-container img {
+        width: 30%;
+    }
+    
+    .login-container {
+        margin-top: 15vw;
+        margin-right: 4vw;
+        width: 250px;
+    }
+
+    .login-container h1 {
+        font-size: 30px;
+    }
+
+    .login-form input {
+        height: 2.5vw;
+    }
+
+    .login-form button {
+        font-size: 1.7vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .login {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .image {
+        display: none;
+    }
+    
+    .login-container img {
+        width: 30%;
+    }
+
+    .login-container {
+        margin-top: 40vw;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .login-container h1 {
+        font-size: 10vw;
+    }
+
+    .login-container p {
+        font-size: 3vw;
+    }
+
+    .login-form input {
+        height: 5vw;
+    }
+
+    .login-form button {
+        margin-top: 3vw;
+        width: 23vw;
+        height: 7vw;
+        font-size: 4.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    .login-form input {
+        height: 7vw;
+    }
+
+    .login-form button {
+        margin-top: 3vw;
+        width: 27vw;
+        height: 8vw;
+        font-size: 4.5vw;
+    }
+}
