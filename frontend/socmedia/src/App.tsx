@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
 import NewsfeedBar from "./components/NewsfeedBar";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -69,7 +68,6 @@ function App() {
             path="/login"
             element={
               <>
-                <NavBar />
                 <Login />
               </>
             }
@@ -78,7 +76,6 @@ function App() {
             path="/signup"
             element={
               <>
-                <NavBar />
                 <Signup />
               </>
             }
