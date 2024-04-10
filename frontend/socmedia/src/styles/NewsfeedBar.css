@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.nav-side {
+    height: 100vh;
+    width: 20vw;
+    background-color: #f3f2ee;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+}
+
+.nav-side .editProfile {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.nav-side .logo {
+    margin: 20px auto 0 40px;
+    height: 50px;
+    width: auto;
+    border: none;
+}
+.nav-side .userProfile {
+    margin-block: 20px 5px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.nav-side .display-count {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-side .display-count label {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.nav-side .button-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.nav-side .button-nav button {
+    height: 35px;
+    width: 20vw;
+    border-right: 5px solid #fea330;
+    /* border-radius: 2px; */
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.nav-side .follow-btn {
+    margin-top: 20px;
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    border: none;
+    background-color: #faa117;
+    font-weight: bold;
+    color: white;
+}

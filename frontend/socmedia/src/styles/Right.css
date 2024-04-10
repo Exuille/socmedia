@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.right-container {
+    height: 100vh;
+    width: 25vw;
+    margin-left: 75vw;
+    background-color: #ffffff;
+    position: fixed;
+    font-family: "Roboto", sans-serif;
+    overflow-y: scroll;
+}
+
+.right-container h4 {
+    color: #fd2d01;
+}
+
+.right-container .sponsors-img {
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.right-container .sponsors-img .sponsor {
+    margin: 5px;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 15px;
+    background-color: #dbdee0;
+}
+.right-container .connected-part {
+    height: 60px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.right-container .connected-part .profile-container {
+    display: flex;
+    gap: 5px;
+}
+
+.right-container .connected-part .profile-container .rightSide-profile {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+.right-container .connected-part .profile-container p {
+    text-overflow: clip;
+    transform: translateY(-10px);
+}
