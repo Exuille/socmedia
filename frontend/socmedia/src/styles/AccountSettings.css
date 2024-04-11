@@ -104,8 +104,8 @@
 }
 
 .account-settings-edit input {
-    width: 16rem;
-    height: 3rem;
+    width: 16vw;
+    height: 4vh;
     border-radius: 20px;
     background-color: whitesmoke;
     font-size: 18px;
@@ -114,8 +114,8 @@
 }
 
 .account-settings-edit button {
-    width: 10rem;
-    height: 3rem;
+    width: 10vw;
+    height: 5vh;
     border-radius: 20px;
     background-color: var(--primary-color);
     border: 0;

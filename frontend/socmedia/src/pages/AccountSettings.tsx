@@ -108,22 +108,6 @@ const AccountSettings = () => {
           }}
           value={email}
         />
-        <label>Update Password:</label>
-        <input
-          type="password"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-          value={password}
-        />
-        <label>Confirm Passowrd:</label>
-        <input
-          type="password"
-          onChange={(e) => {
-            setConfirmPassword(e.target.value);
-          }}
-          value={confirmPassword}
-        />
         <button onClick={() => handleUpdate()}>Save Changes</button>
       </div>
       <div className="account-settings-right">
