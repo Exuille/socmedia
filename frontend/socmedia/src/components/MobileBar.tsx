@@ -48,7 +48,7 @@ const MobileBar = () => {
           style={{
             color: "#fd2d01",
           }}
-          to="/settings"
+          to="/account-settings"
         >
           <IoSettings />
         </Link>

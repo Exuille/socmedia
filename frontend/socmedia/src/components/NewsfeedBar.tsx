@@ -78,10 +78,10 @@ const NewsfeedBar = () => {
             Friends
           </StyledLink>
         </StyledButton>
-        <StyledButton active={location.pathname.startsWith("/settings")}>
+        <StyledButton active={location.pathname.startsWith("/account-settings")}>
           <StyledLink
-            to="/settings"
-            active={location.pathname.startsWith("/settings")}
+            to="/account-settings"
+            active={location.pathname.startsWith("/account-settings")}
           >
             Settings
           </StyledLink>

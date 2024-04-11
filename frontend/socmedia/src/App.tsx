@@ -25,6 +25,15 @@ const PageWithNewsfeedBarLayout = ({
   </div>
 );
 
+const PageWithNewsfeedBarLayoutNoRight = ({
+  children,
+}: PageWithNewsfeedBarLayoutProps) => (
+  <div style={{ display: "flex", flexDirection: "row" }}>
+    <NewsfeedBar />
+    {children}
+  </div>
+);
+
 function App() {
   return (
     <div className="App">
@@ -58,9 +67,9 @@ function App() {
           <Route
             path="/account-settings/*"
             element={
-              <PageWithNewsfeedBarLayout>
+              <PageWithNewsfeedBarLayoutNoRight>
                 <AccountSettings />
-              </PageWithNewsfeedBarLayout>
+              </PageWithNewsfeedBarLayoutNoRight>
             }
           />
 

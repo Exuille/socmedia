@@ -1,0 +1,179 @@
+/* REMOVE THIS AFTER */
+.account-settings-main .right-container {
+    display: none;
+}
+
+.account-settings-main .top-part {
+    display: none;
+}
+
+.account-settings-main {
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.account-settings-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 70vh;
+    margin-left: 5vw;
+}
+
+.account-settings-left h3 {
+    font-size: 2rem;
+}
+
+.account-settings-left label {
+    font-size: 1.5rem;
+}
+
+.acc-set-left-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    font-size: 1rem;
+}
+
+.acc-set-left-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.acc-set-left-buttons .profile-tab {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.acc-set-left-buttons .logout-tab {
+    margin-top: 0.4rem;
+    color: var(--dark-reddish-color);
+    font-weight: 500;
+}
+
+.acc-set-left-buttons .profile-tab:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.acc-set-left-buttons .logout-tab:hover {
+    background-color: var(--dark-reddish-color);
+    color: white;
+}
+
+.acc-set-left-buttons .arrow-tab {
+    margin-left: 10rem;
+    color: black;
+}
+
+.acc-set-left-buttons a > span {
+    display: flex;
+    align-items: center;
+}
+
+.acc-set-left-buttons a > span > svg {
+    margin-right: 0.5rem;
+}
+
+.account-settings-edit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-top: 12vh;
+    height: 80vh;
+}
+
+.account-settings-edit h3 {
+    padding-left: 1vw;
+    font-size: 1.2rem;
+}
+
+.account-settings-edit label {
+    padding-left: 1vw;
+    font-weight: 500;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+.account-settings-edit input {
+    width: 16rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    font-size: 18px;
+    margin-right: 10px;
+    padding-left: 2vw;
+}
+
+.account-settings-edit button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    border: 0;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2vh;
+}
+
+.account-settings-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10vw;
+    height: 70vh;
+}
+
+.account-settings-right h3 {
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.account-settings-right p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.account-settings-right .change-pfp-btn {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.1rem solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 2vh;
+}
+
+.account-settings-right .change-pfp-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.account-settings-right .delete-pfp-btn {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.1rem solid var(--dark-color);
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    margin-top: 2vh;
+}
+
+.account-settings-right .delete-pfp-btn:hover {
+    background-color: var(--dark-color);
+    color: white;
+    cursor: pointer;
+}
