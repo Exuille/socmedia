@@ -12,8 +12,6 @@ const AccountSettings = () => {
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleUpdate = async () => {
     try {
@@ -35,12 +33,6 @@ const AccountSettings = () => {
       // } else {
       //     console.log("Update Failed")
       // }
-      if (password != confirmPassword) {
-        // Do logic here
-        console.log("PASSWORDS DON'T MATCH");
-      } else {
-        // Do logic here
-      }
     } catch (error) {
       console.error("Error updating:", error);
     }
